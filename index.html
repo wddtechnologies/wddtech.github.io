@@ -1,10 +1,198 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louise Rennick - Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f4f9;
+            color: #333;
+        }
+        .profile-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 30px;
+            transition: transform 0.3s;
+        }
+        .profile-card:hover {
+            transform: scale(1.02);
+        }
+        .profile-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #6c757d;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 1.5rem;
+            border-bottom: 3px solid #6c757d;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .list-group-item {
+            border: none;
+            padding-left: 0;
+        }
+        .social-icons a {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
-
 <body>
-    <p> landing page</p>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Profile Card -->
+            <div class="profile-card text-center p-4">
+                <img src="1000004939.jpg" alt="Profile Image" class="profile-image mx-auto d-block">
+                <h2 class="my-3 text-primary">Louise Rennick</h2>
+
+                <!-- Social Media Links -->
+                <div class="social-icons mb-3">
+                    <a href="https://www.linkedin.com/in/louise-rennick-84a942a5/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/wddtechnologies" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="mt-3">
+                    <p><strong>Location:</strong> Orangeville, ON L9W 2X9</p>
+                    <p><strong>Email:</strong> wddtechnologies.com@gmail.com</p>
+                    <p><strong>Phone:</strong> 519-215-3340</p>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="mt-4 text-start">
+                    <h4 class="section-title">Professional Summary</h4>
+                    <p class="text-muted">Dynamic web development instructor and software expert with over a decade of experience in creating and optimizing custom web solutions. Skilled in curriculum development, remote learning strategies, and student engagement, with extensive experience in teaching responsive design, UI/UX, and SEO optimization.</p>
+                </div>
+
+                <!-- Core Qualifications -->
+                <div class="mt-4 text-start">
+                    <h4 class="section-title">Core Qualifications</h4>
+                    <ul class="list-group list-group-flush text-muted">
+                        <li class="list-group-item"><strong>Web Development & CMS:</strong> WordPress, Drupal, CakePHP</li>
+                        <li class="list-group-item"><strong>Programming Languages:</strong> PHP, JavaScript, jQuery, C#, C++, Python, Java</li>
+                        <li class="list-group-item"><strong>Frameworks & Tools:</strong> ASP.NET Core, MVC, Bootstrap, Angular, React, Vue</li>
+                        <li class="list-group-item"><strong>Database & Server Management:</strong> MySQL, MariaDB, SQL Server, LAMP stack, IIS</li>
+                        <li class="list-group-item"><strong>API Integration & Optimization:</strong> Postman, Firebase, Docker, Google Analytics</li>
+                        <li class="list-group-item"><strong>Design & UI:</strong> Adobe Creative Cloud, responsive design</li>
+                    </ul>
+                </div>
+
+                <!-- Professional Experience -->
+                <div class="mt-4 text-start">
+                    <h4 class="section-title">Professional Experience</h4>
+                    <div class="accordion" id="experienceAccordion">
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Web Development & Application Instructor
+                                </button>
+                            </h5>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
+                                <div class="accordion-body">
+                                    <p class="text-muted">triOS College - Mississauga Campus<br>2012 – Present</p>
+                                    <ul class="text-muted">
+                                        <li>Develop and deliver web and application development courses.</li>
+                                        <li>Enhance and update curriculum in collaboration with academic leadership.</li>
+                                        <li>Support diverse student groups with active learning techniques.</li>
+                                        <li>Awarded Instructor of the Year (2019) for outstanding contributions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Mentor
+                                </button>
+                            </h5>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experienceAccordion">
+                                <div class="accordion-body">
+                                    <p class="text-muted">WDD Technologies<br>2010 – Present</p>
+                                    <ul class="text-muted">
+                                        <li>Mentor aspiring developers through internships and hands-on projects.</li>
+                                        <li>Conduct remote learning sessions and workshops via Microsoft Teams.</li>
+                                        <li>Provide feedback on portfolios and guide students with the latest industry practices.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Legal Administrative Assistant
+                                </button>
+                            </h5>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#experienceAccordion">
+                                <div class="accordion-body">
+                                    <p class="text-muted">PDC Lawyers<br>July 2001 – Feb 2008</p>
+                                    <ul class="text-muted">
+                                        <li>Provided administrative support in legal documentation and client relations.</li>
+                                        <li>Ensured accuracy and confidentiality in managing legal records.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="mt-4 text-start">
+                    <h4 class="section-title">Education</h4>
+                    <ul class="list-group list-group-flush text-muted">
+                        <li class="list-group-item"><strong>Web Technology Specialist</strong> - triOS College, Kitchener Campus, 2009</li>
+                        <li class="list-group-item"><strong>Legal Administrative Assistant</strong> - Toronto School of Business, 2001</li>
+                    </ul>
+                </div>
+
+                <!-- Awards & Certifications -->
+                <div class="mt-4 text-start">
+                    <h4 class="section-title">Awards & Certifications</h4>
+                    <ul class="list-group list-group-flush text-muted">
+                        <li class="list-group-item">Instructor Certification Program – triOS College (2024)</li>
+                        <li class="list-group-item">Diversity & Inclusion Training: Inclusive Conversations (2021)</li>
+                        <li class="list-group-item">Instructor of the Year, triOS College (2019)</li>
+                        <li class="list-group-item">Passion for Excellence Award (2015)</li>
+                        <li class="list-group-item">Microsoft Certification: ASP.NET (2012)</li>
+                    </ul>
+                </div>
+
+                <!-- Community Involvement -->
+                <div class="mt-4 text-start">
+                    <h4 class="section-title">Community Involvement</h4>
+                    <ul class="list-group list-group-flush text-muted">
+                        <li class="list-group-item">Diversity Council Member, triOS College</li>
+                        <li class="list-group-item">Instructor Advisory Committee Member</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS Bundle with Popper and Font Awesome JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
