@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/style.css">
+
+    <style>
+      /* Basic reset */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #fafafa;
+        color: #222;
+        line-height: 1.7;
+      }
+
+      /* Centered content */
+      .container {
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      /* Navigation */
+      nav {
+        background: white;
+        padding: 15px 20px;
+        border-bottom: 1px solid #ddd;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+      }
+
+      nav a {
+        margin-right: 20px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #1a73e8;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Headings */
+      h1, h2, h3 {
+        color: #111;
+        margin-top: 35px;
+      }
+
+      /* Project images */
+      img.project-preview {
+        width: 100%;
+        border-radius: 10px;
+        margin: 20px 0;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+      }
+
+      footer {
+        margin-top: 60px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+        color: #666;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="/">Home</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    {{ content }}
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © {{ site.time | date: "%Y" }} {{ site.title }}
+  </footer>
+
+</body>
+</html>
 
